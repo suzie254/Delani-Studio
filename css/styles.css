@@ -1,0 +1,176 @@
+/*Styling the google fonts*/
+body{
+    font-family: 'Archivo';
+}
+/*Styling the header part of the website*/
+.jumbotron-fluid{
+    background-image: url('../assets/backgrounds/h_img.jpg');
+    background-size: cover;
+    padding: 1%;
+}
+
+.jumbotron-fluid img:first-child{
+    margin-top: 16%;
+    margin-bottom: 1%;
+}
+
+.jumbotron-fluid img:not(first-child){
+    margin-top: 12%;
+}
+
+.jumbotron-fluid h1, .jumbotron-fluid p{
+    color: white;
+}
+.jumbotron-fluid h1:first-of-type{
+    margin-top: 10%;
+}
+
+.jumbotron-fluid h1:not(:first-child){
+    margin-top: 4%;
+}
+
+/*Styling the about Us bit*/
+#about{
+    padding: 1%;
+}
+
+/*Styling the Service Section*/
+#services{
+    background-image: url('../assets/backgrounds/s_image.jpg');
+    background-size: cover;
+    padding: 7%;
+}
+#services p, #services h2{
+    color: white;
+}
+
+
+/*What we do*/
+#what-we-do{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 4%;
+}
+#what-we-do div{
+    direction: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+}
+#what-head{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#what-we-do .card{
+    border: none;
+}
+
+#design-paragraph, #development-paragraph, #product-paragraph{
+    display: none;
+}
+
+/*The portfolio section*/
+.portfolio{
+    text-align: center;
+    align-items: center;
+    padding-top: 0;
+}
+
+#portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-top: 1%;
+}
+#portfolio .card{
+    margin: 2%;
+    width: 300px;
+}
+
+#portfolio .card h4{
+    color: white;
+    border: 3px solid white;
+    margin: 2%;
+    padding: 4%;
+    height: 90%;
+    text-align: left;
+    font-weight: bolder;
+}
+
+#portfolio .card img{
+    width: 100%;
+}
+
+/*hiding overlays*/
+.card-img-overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+/*Contact Us Section*/
+.contact{
+    background-image: url('../assets/backgrounds/c_image.jpg');
+    background-size: cover;
+    color: white;
+    padding: 4%;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+.contact input[type=email], input[type=text]{
+    background: transparent;
+    width: 43%;
+    margin: 3%;
+    border: 2px solid white;
+    height: 3%;
+}
+textarea{
+    background: transparent;
+    margin-left: 7%;
+    border: 2px solid white;
+    width: 85%;
+}
+
+::placeholder{
+    color: white;
+    opacity: 1;
+}
+button{
+    width: 40%;
+    margin-left: 30%;
+    color: white;
+    margin-top: 5%;
+    background-color: rgb(50, 20, 7);
+    border-radius: 10px;
+}
+button:hover{
+    cursor: grab;
+    background-color: rgba(0, 0, 0, 0.7);
+    outline: none;
+}
+
+
+/*styling the social media icons*/
+#social-icons{
+    padding: 1%;
+}
+
+#social-icons img{
+    margin: 0.7%;
+}
+
+
+
+@media screen and(max-width:700px){
+    input{
+        width: 100%;
+    }
+   
+}
